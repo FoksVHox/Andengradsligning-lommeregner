@@ -6,7 +6,7 @@ double Dval;
 double Aval;
 double Bval;
 double Cval;
-
+int DvDDDal;
 
 	// Funktionen for hvis der er 2x'er
 void ToX() {
@@ -39,8 +39,10 @@ void ToX() {
 	cout << PlusxR <<"\n"<<endl;
 
 	// Endeligt resultat
-	cout <<"x=" << MinusR << " eller " << "x="<< PlusxR <<endl;
+	cout <<"x=" << MinusR << " eller " << "x="<< PlusxR <<"\n"<<endl;
 
+	cout << "//////////////////////////////////" << endl;
+	cout << "Lommeregner af Jonas Glymov" << endl;
 }
 
 	// Funktion for hvis diskriminanten er 0
@@ -50,35 +52,41 @@ void EnX() {
 	cout << "Udregning af x1 \n" << endl;
 	cout <<"-" << Bval << " / " << "2*"<<Aval << endl;
 	cout <<"x= "<< EnX << endl;
+
 }
 
 int main()
 {
 	// Get ax value
-	cout << "Type in 'ax' value" << endl;
+	cout << "//////////////////////////////\n" << endl;
+	cout << " indtast a, b og c vaerdier\n" << endl;
+	cout << "//////////////////////////////\n" << endl;
+	cout << "indtast 'a' vaerdi" << endl;
 	cin >> Aval;
 
 	// Get bx value
-	cout << "Type in 'bx' value" << endl;
+	cout << "indtast 'b' vaerdi" << endl;
 	cin >> Bval;
 
 	// Get c value
-	cout << "Type in 'c' value" << endl;
+	cout << "indtast 'c' vaerdi" << endl;
 	cin >> Cval;
 
 	// Regn 'd' Værdien
 	Dval = Bval*Bval - 4 * Aval * Cval;
 	
 	// Interface
-	cout << "//////////////////\n" << endl;
+	cout << "//////////////////////////////\n" << endl;
 	cout << "UDREGNING\n" << endl;
-	cout << "//////////////////\n" << endl;
+	cout << "//////////////////////////////\n" << endl;
 
 	// Diskriminent tjekker
 	if (Dval < 0) {
 		cout << "Udregning af d \n" << endl;
 		cout << Bval << "^2 " << "- " << "4*" << Aval << Cval << " = " << Dval << "\n" << endl;
-		cout << "Ligningen har ingen losninger" << endl;
+		cout << "Ligningen har ingen losninger, da deskriminanten er negativ!\n" << endl;
+		cout << "//////////////////////////////////" << endl;
+		cout << "Lommeregner af Jonas Glymov" << endl;
 }
 	// Tjekker hvorvidt d er over 0
 		else if (Dval > 0) {
@@ -91,6 +99,6 @@ int main()
 		else if (Dval == 0) {
 		EnX();
 
-}
-
+	}
+	cin >> DvDDDal;
 }
