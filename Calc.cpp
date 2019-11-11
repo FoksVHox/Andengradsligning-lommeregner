@@ -8,7 +8,7 @@ double Bval;
 double Cval;
 int DvDDDal;
 
-	// Funktionen for hvis der er 2x'er
+	// Funktionen udregner de 2 x varianter
 void ToX() {
 	// Minus-x udregning
 	double Minusx1 = -Bval-sqrt(Dval);
@@ -57,22 +57,22 @@ void EnX() {
 
 int main()
 {
-	// Get ax value
+	// Indtast a værdi
 	cout << "//////////////////////////////\n" << endl;
 	cout << " indtast a, b og c vaerdier\n" << endl;
 	cout << "//////////////////////////////\n" << endl;
 	cout << "indtast 'a' vaerdi" << endl;
 	cin >> Aval;
 
-	// Get bx value
+	// Indtast b værdi
 	cout << "indtast 'b' vaerdi" << endl;
 	cin >> Bval;
 
-	// Get c value
+	// Indtast c værdi
 	cout << "indtast 'c' vaerdi" << endl;
 	cin >> Cval;
 
-	// Regn 'd' Værdien
+	// Udregner d værdi
 	Dval = Bval*Bval - 4 * Aval * Cval;
 	
 	// Interface
