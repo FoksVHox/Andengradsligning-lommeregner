@@ -11,4 +11,4 @@ derefter vil den automatisk udregne ligningen samt give dig de fantastiske melle
 
 **Lad os prøve med ligningen _2x^2+6x+4_**
 
-![Billede1](Andengradsligning-lommeregner/ReadmeSovs/1.png)
+![Billede1](https://github.com/Glymse/Andengradsligning-lommeregner/blob/master/ReadmeSovs/1.PNG)
