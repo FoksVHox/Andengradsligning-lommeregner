@@ -7,79 +7,90 @@ double Aval;
 double Bval;
 double Cval;
 
-void to() {
-	//Minusx
+
+	// Funktionen for hvis der er 2x'er
+void ToX() {
+	// Minus-x udregning
 	double Minusx1 = -Bval-sqrt(Dval);
 	double Minusx2 = 2*Aval;
 	double MinusR = Minusx1 / Minusx2;
-	//Plusx
+
+	// Plus-x udregning
 	double Plusx1 = -Bval + sqrt(Dval);
 	double Plusx2 = 2 * Aval;
 	double PlusxR = Plusx1 / Plusx2;
 
-	//Udregning af d
+	// Udregning af d
 	cout << "Udregning af d \n" << endl;
 	cout << Bval<<"^2 "<<"- "<< "4*"<<Aval << Cval << " = "<< Dval<<"\n" <<endl;
 
-	//Udregning af x1
+	// Udregning af x2
+	cout << "Udregning af x2 \n" << endl;
+
+	cout << "-" << Bval << " + kvrod(" << Dval << ") = " << Minusx1 << "\n" << Aval << "^2 = " << Minusx2 << endl;
+	cout << Minusx1 << "/" << Minusx2 << endl;
+	cout << MinusR << "\n" << endl;
+
+	// Udregning af x1
 	cout << "Udregning af x1 \n" <<endl;
 
 	cout << "-" << Bval << " - kvrod(" << Dval<< ") = "<< Plusx1 <<"\n"<< Aval << "^2 = " << Plusx2 << endl;
 	cout <<Plusx1 <<"/"<<Plusx2 << endl;
 	cout << PlusxR <<"\n"<<endl;
 
-	//Udregning af x2
-	cout << "Udregning af x2 \n" << endl;
-
-	cout << "-" << Bval << " + kvrod(" << Dval << ") = " << Minusx1 << "\n" << Aval << "^2 = " << Minusx2 << endl;
-	cout << Minusx1 << "/" << Minusx2 << endl;
-	cout << MinusR << endl;
+	// Endeligt resultat
+	cout <<"x=" << MinusR << " eller " << "x="<< PlusxR <<endl;
 
 }
 
-void en() {
-	return;
+	// Funktion for hvis diskriminanten er 0
+void EnX() {
+
+	double EnX = -Bval / 2 * Aval;
+	cout << "Udregning af x1 \n" << endl;
+	cout <<"-" << Bval << " / " << "2*"<<Aval << endl;
+	cout <<"x= "<< EnX << endl;
 }
 
 int main()
 {
-	//Get ax value
+	// Get ax value
 	cout << "Type in 'ax' value" << endl;
 	cin >> Aval;
 
-	//Get bx value
+	// Get bx value
 	cout << "Type in 'bx' value" << endl;
 	cin >> Bval;
 
-	//Get c value
+	// Get c value
 	cout << "Type in 'c' value" << endl;
 	cin >> Cval;
 
-	//Calculating 'D' value
+	// Regn 'd' Værdien
 	Dval = Bval*Bval - 4 * Aval * Cval;
 	
-	//Text for udregning
+	// Interface
 	cout << "//////////////////\n" << endl;
 	cout << "UDREGNING\n" << endl;
 	cout << "//////////////////\n" << endl;
-	//Checking whether or not eqution is legal
+
+	// Diskriminent tjekker
 	if (Dval < 0) {
 		cout << "Udregning af d \n" << endl;
 		cout << Bval << "^2 " << "- " << "4*" << Aval << Cval << " = " << Dval << "\n" << endl;
 		cout << "Ligningen har ingen losninger" << endl;
 }
-	//Tjekker hvorvidt Dval er over 0
+	// Tjekker hvorvidt d er over 0
 		else if (Dval > 0) {
 
 		
-		to();
+		ToX();
 
 }
-	////Tjekker hvorvidt Dval er 0
-		else if (Dval = 0) {
-		cout << "Det ene x er saledes:" << endl;
-		en();
-				cout << "Det ene x er saledes:" << endl;
+	//// Tjekker hvorvidt d er 0
+		else if (Dval == 0) {
+		EnX();
+
 }
 
 }
