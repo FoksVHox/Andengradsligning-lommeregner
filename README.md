@@ -9,4 +9,6 @@ _Der litteraly ingen garanti for at skidtet virker optimalt, eftersom det en af 
 derefter vil den automatisk udregne ligningen samt give dig de fantastiske mellemregninger du har brug for.
 
 
+**Lad os prøve med ligningen _2x^2+6x+4_**
 
+![Eksempel1](/Readme sources/1.png)
