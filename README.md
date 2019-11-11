@@ -11,4 +11,4 @@ derefter vil den automatisk udregne ligningen samt give dig de fantastiske melle
 
 **Lad os prøve med ligningen _2x^2+6x+4_**
 
-![Eksempel1](/Readme sources/1.png)
+![Eksempel1](/ReadmeSovs/1.png)
