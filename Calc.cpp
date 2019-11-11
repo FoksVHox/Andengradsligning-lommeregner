@@ -9,13 +9,13 @@ double Cval;
 
 void to() {
 	//Minusx
-	int Minusx1 = -Bval-sqrt(Dval);
-	int Minusx2 = 2*Aval;
-	int MinusR = Minusx1 / Minusx2;
+	double Minusx1 = -Bval-sqrt(Dval);
+	double Minusx2 = 2*Aval;
+	double MinusR = Minusx1 / Minusx2;
 	//Plusx
-	int Plusx1 = -Bval + sqrt(Dval);
-	int Plusx2 = 2 * Aval;
-	int PlusxR = Plusx1 / Plusx2;
+	double Plusx1 = -Bval + sqrt(Dval);
+	double Plusx2 = 2 * Aval;
+	double PlusxR = Plusx1 / Plusx2;
 
 	//Udregning af d
 	cout << "Udregning af d \n" << endl;
@@ -64,12 +64,13 @@ int main()
 	cout << "//////////////////\n" << endl;
 	//Checking whether or not eqution is legal
 	if (Dval < 0) {
-		cout << "Ligningen har ingen losninger, da den er negativ" << endl;
+		cout << "Udregning af d \n" << endl;
+		cout << Bval << "^2 " << "- " << "4*" << Aval << Cval << " = " << Dval << "\n" << endl;
+		cout << "Ligningen har ingen losninger" << endl;
 }
 	//Tjekker hvorvidt Dval er over 0
 		else if (Dval > 0) {
-		cout << "RESULTATER\n" << endl;
-		cout << "___________\n" << endl;
+
 		
 		to();
 
