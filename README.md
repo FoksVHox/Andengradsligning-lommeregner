@@ -1,7 +1,7 @@
 # Andengradslignings lommeregner med mellemregninger
 
 *_(disclaimer)_*
-_Der litteraly ingen garanti for at skidtet virker optimalt, eftersom det en af mine første c++ projekter_
+_Der litteraly ingen garanti for at skidtet virker optimalt, eftersom det et af mine første c++ projekter_
 
 **Hvordan virker skidtet?**
 
@@ -11,4 +11,4 @@ derefter vil den automatisk udregne ligningen samt give dig de fantastiske melle
 
 **Lad os prøve med ligningen _2x^2+6x+4_**
 
-![Eksempel1](/Readme sources/1.png)
+![Billede1](https://github.com/Glymse/Andengradsligning-lommeregner/blob/master/ReadmeSovs/1.PNG)
