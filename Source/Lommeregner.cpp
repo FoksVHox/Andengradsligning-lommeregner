@@ -56,7 +56,9 @@ void EnX() {
 	cout << "x= " << EnX << endl;
 
 }
-
+void Luk() {
+	Luk();
+}
 
 
 int main()
@@ -129,9 +131,32 @@ int main()
 	else if (CloseOrNotCin == "y") {
 		exit(0);
 	}
-	else if (CloseOrNotCin != "n" && "y") {
+	else if (CloseOrNotCin == "plot") {
+		cout << "YEEET"<< endl;
+	}
+	else if (CloseOrNotCin != "n" && "y" && "plot") {
 		exit(0);
 	}
 
 }
 
+void Luk() {
+	cin >> CloseOrNotCin;
+	if (CloseOrNotCin == "n") {
+		cout << "			" << endl;
+		for (int i = 0; i < 15; i++) {
+			cout << "			\n" << endl;
+		}
+		main();
+	}
+	else if (CloseOrNotCin == "y") {
+		exit(0);
+	}
+	else if (CloseOrNotCin == "plot") {
+		main();
+	}
+	else if (CloseOrNotCin != "n" && "y" && "plot") {
+		exit(0);
+	}
+
+	}
